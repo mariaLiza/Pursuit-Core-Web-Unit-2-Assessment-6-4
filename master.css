@@ -1,0 +1,14 @@
+img {
+    max-width: 30%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    border: transparent;
+    background-color: aqua;
+}   
+
+body {
+    background-color: lavender;
+    height: 100vh;
+}
