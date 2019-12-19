@@ -34,16 +34,19 @@ document.addEventListener("DOMContentLoaded", () => {
     let li = document.createElement("li")
     ul.appendChild(li)
     let titleP = document.createElement("p")
-
     form.addEventListener("submit", async e => {
-      e.preventDefault()
-      try {
-        let res = await axios.get("https://ghibliapi.herokuapp.com/films")
-        res.data.forEach(movie => {
-          select.value = movie[i].title
-        })
+        e.preventDefault()
+        try {
+            let res = await axios.get("https://ghibliapi.herokuapp.com/films")
+            res.data.forEach(movie => {
+                li.innerText = `${textInput.value}`
+                // if(li) {
+                //     li.parentNode.removeChild(li)
 
-        li.innerText = `${textInput.value}`
+                // }
+            })
+            
+            // ul.innerText = ""
       } catch (err) {
         console.log(err)
       }

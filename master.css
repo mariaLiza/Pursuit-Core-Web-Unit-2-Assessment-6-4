@@ -1,29 +1,23 @@
 body {
-    /* display: flex; */
-    /* flex-flow: wrap;
-    flex-direction: row; */
     background-color: lavender;
     height: 100vh;
     justify-content: center;
 }
 h1 > img {
-    /* display: flex; */
-    display: grid;
+    display: flex;
     grid-template-rows: max-content;
-    justify-content: center;
-    margin: 5%;
-}
-img {
-    max-width: 70%;
+    justify-content: stretch;
+    text-align: center;
+    /* margin: 5%; */
+    max-width: 45%;
     max-height: 30%;
-    margin: auto;
-    justify-content: center;
     display: flex;
     flex-direction: row;
     border: transparent;
     background-color: aqua;
 }   
 select {
+    justify-content: center;
     max-width: 25%;
     margin: auto;
     padding: 20pt;
@@ -33,6 +27,14 @@ form {
     flex-direction: column;
 }
 
+#submitInput{
+justify-content: center;
+text-align: center;
+}
+
+#movieInfo {
+   margin: auto;
+}
 @media only screen and (max-width: 900px) {
     body  > img {
         margin: 2% 2.5%;
