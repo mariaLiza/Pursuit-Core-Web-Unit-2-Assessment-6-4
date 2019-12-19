@@ -6,8 +6,8 @@ body {
     height: 100vh;
     justify-content: center;
 }
-h1 {
-    display: flex;
+h1 > img {
+    /* display: flex; */
     display: grid;
     grid-template-rows: max-content;
     justify-content: center;
@@ -26,6 +26,7 @@ img {
 select {
     max-width: 25%;
     margin: auto;
+    padding: 20pt;
 }
 form {
     display: grid;
