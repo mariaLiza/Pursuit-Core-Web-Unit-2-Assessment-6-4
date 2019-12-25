@@ -2,9 +2,9 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ghibli Review App</title>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./index.js"></script>
@@ -12,20 +12,23 @@
 </head>
 
 <body>
+    <section>
 
-    <h1>
         <img
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Studio_Ghibli_logo.svg/1200px-Studio_Ghibli_logo.svg.png" />Ghibli
-        Review App</h1>
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Studio_Ghibli_logo.svg/1200px-Studio_Ghibli_logo.svg.png" />
+        <h1>
+            Ghibli Review App
+        </h1>
+    </section>
     <form>
+        <div id="movieInfo"></div>
         <select>
             <option value="0" selected disabled>Choose Movie</option>
             <input type="text" value="" placeholder="Enter Your Review" id="textInput" />
             <input type="submit" value="submit" id="submitInput" />
         </select>
     </form>
-    <div id="movieInfo">
-    </div>
+    
 </body>
 
 </html>
