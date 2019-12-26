@@ -1,89 +1,80 @@
 body {
-    background-color: lavender;
-    height: 100vh;
-    justify-content: center;
+  background-color: lavender;
+  height: 100vh;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
 }
 
-/* h1 > img {
-    display: flex;
-    grid-template-rows: max-content;
-    justify-content: stretch;
-    text-align: center;
-    /* margin: 5%; */
-/* max-width: 45%;
-    max-height: 30%;
-    display: flex;
-    flex-direction: row;
-    border: transparent;
-    background-color: aqua;
-}    */
-
 section {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    width: 75%;
-    height: 25%;
-    background: aqua;
-    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  width: 75%;
+  height: 25%;
+  background: aqua;
+  margin: auto;
 }
 
 img {
-    margin: auto;
-    width: 100%;
-    height: auto;
-    justify-content: center;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 
 h1 {
-    width: 65%;
-    font-family: 'Courier New', Courier, monospace;
-    bottom: 0px;
-    margin: 150px 45px 0px 125px;
+  width: 65%;
+  font-family: "Courier New", Courier, monospace;
+  bottom: 0px;
+  margin: 150px 45px 0px 125px;
 }
 
 select {
-    justify-content: center;
-    max-width: 25%;
-    margin: auto;
-    padding: 20pt;
+  max-width: 25%;
+  height: 25px;
+  margin: 0% 20% 5% 0%;
+  padding: 20pt;
 }
 
 form {
-    display: grid;
-    grid-auto-flow: row;
+  margin: 5%;
+  display: grid;
+  grid-auto-flow: row;
 }
 
 #submitInput {
-    justify-content: center;
-    text-align: center;
+  width: 10%;
+  margin: 0% 10% 0% 0%;
+  text-align: center;
 }
 
 #textInput {
-    height: 50px;
-    justify-items: center;
-    text-align: center;
+  height: 75px;
+  justify-items: center;
+  text-align: center;
 }
 
 #movieInfo {
-    margin: auto;
+  margin: auto;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+h2 {
+    font-weight: bolder;
 }
 
 @media only screen and (max-width: 900px) {
-    body>img {
-        margin: 2% 2.5%;
-        width: 45%;
-    }
-
+  body > img {
+    margin: 2% 2.5%;
+    width: 45%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    body>img {
-        margin: 2% 2.5%;
-        width: 45%;
-    }
-
+  body > img {
+    margin: 2% 2.5%;
+    width: 45%;
+  }
 }

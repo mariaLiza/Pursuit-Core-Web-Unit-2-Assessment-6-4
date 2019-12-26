@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let textInput = document.querySelector("#textInput")
   let submitInput = document.querySelector("#submitInput")
   let movieInfo = document.querySelector("#movieInfo")
-  let movieTitle;
+  let movieTitle
 
   let h3 = document.createElement("h3")
   movieInfo.appendChild(h3)
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   select.addEventListener("change", async e => {
     h3.innerText = movieTitle = e.target.value
-    
+
     try {
       let res = await axios.get("https://ghibliapi.herokuapp.com/films")
       res.data.forEach(movie => {
@@ -35,25 +35,22 @@ document.addEventListener("DOMContentLoaded", () => {
     form.appendChild(ul)
     let li = document.createElement("li")
     ul.appendChild(li)
-    let titleP = document.createElement("p")
-    li.appendChild(titleP)
+    let h2 = document.createElement("h2")
+    ul.appendChild(h2)
     form.addEventListener("submit", async e => {
       e.preventDefault()
       try {
         let res = await axios.get("https://ghibliapi.herokuapp.com/films")
         res.data.forEach(movie => {
-          titleP.innerText = movieTitle
-          li.innerText = `${textInput.value}`
+          h2.value = movieTitle
+          li.innerText = `${movieTitle} : ${textInput.value}`
         })
-
       } catch (err) {
         console.log(err)
       }
 
       textInput.value = ""
-
     })
-
   })
 
   const populateSelect = async () => {
